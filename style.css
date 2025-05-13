@@ -21,3 +21,18 @@
   padding: 3px 8px;
   font-style: italic;
 }
+
+h2,
+h3,
+h4 {
+  color: #12af46;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  text-decoration-line: underline;
+  text-decoration-color: #4caf50;
+}
+
+p {
+  margin-bottom: 15px;
+  text-align: justify;
+}
