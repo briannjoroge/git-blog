@@ -45,6 +45,47 @@ h1 {
   font-style: italic;
 }
 
+ul,
+ol {
+  margin-left: 30px;
+  margin-bottom: 15px;
+  padding-left: 20px;
+  list-style-type: disc;
+
+}
+
+li {
+  margin-bottom: 8px;
+  color: #000;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+  text-indent: 5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #3d8ccc;
+  text-decoration: solid;
+  font-weight: lighter;
+
+}
+a:active{
+  color: red;
+  text-decoration: none;
+}
+.conclusion{
+  font-weight: bolder;
+  color: #000;
+
 
 h2,
 h3,
@@ -59,5 +100,6 @@ h4 {
 p {
   margin-bottom: 15px;
   text-align: justify;
+
 }
 
