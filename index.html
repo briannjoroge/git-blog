@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,7 +8,6 @@
 </head>
 
 <body>
-  <div>
     <h1>EVERYDAY GIT</h1>
     <p>
       In the world of software development, change is constant. Code evolves
@@ -53,281 +51,267 @@
     </div>
     <div>
       <h3>Checking if Git is installed</h3>
-      </p> To check if git is installed in your system open the
+
+    </p> To check if Git is installed in your system open the
       command line and run the command below:
       </p>
+    <p><em class="command">git --version</em></p>
 
-      <p><em>git --version</em></p>
+    <figure>
+      <img
+        src="./images/check-version.png"
+        alt="results of git --version"
+        width="400"
+      />
+      <figcaption>Checking if Git is installed</figcaption>
+    </figure>
+    <p>
+      If You get a response similar to the one above the you already have Git
+      installed in you system.
+    </p>
+    <p>
+      If Git is not installed and you are in a windows machines you will get an error
+      messsage like:
+    </p>
+    <p>
+      <em id="error">'git' is not recognized as an internal or external command, operable
+        program or batch file.</em
+      >
+    </p>
+    <p>If you are in a linux machine you will get some similar to this,</p>
+    <figure>
+      <img
+        src="./images/git-not-installed.png"
+        alt="git not installed response"
+        width="400"
+      />
+      <figcaption>
+        Response when Git is not installed in a linux machine.
+      </figcaption>
+    </figure>
 
-      <figure>
-        <img src="./images/check-version.png" alt="results of git --version" width="400" />
-        <figcaption>Checking if git is installed</figcaption>
-      </figure>
-      <p>
-        If You get a response similar to the one above the you already have git
-        installed in you system
-      </p>
-      <p>
-        If git is not installed and you are in a windows machines you will get a
-        messsage like:
-      </p>
-      <p>
-        <em>'git' is not recognized as an internal or external command, operable
-          program or batch file.</em>
-      </p>
-      <p>if you are in a linux machine you will get some similar to this</p>
-      <figure>
-        <img src="./images/git-not-installed.png" alt="git not installed response" width="400" />
-        <figcaption>
-          Response when git is not installed in a linux machine
-        </figcaption>
-      </figure>
-
-      <p>
-        To install Git we first need to download it. Visit the webpage
-        <a href="https://git-scm.com/downloads">HERE</a> to download Git and make
-        sure you download one that is compatible with your operating system.
-      </p>
-      <p>
-        After installing git, run the command <em>git --version</em> in the command
-        line to be sure git is set up successfully in your system. If everything works
-        as expected then we can proceed and configure git.
-      </p>
-    </div>
-  </div>
-  <h3>Configuring GIT</h3>
-  <p>In this section we will configure the email and username .</p>
-  <h4>Configuring the username</h4>
-  <p>
-    To configure the username, run the following command
-  </p>
-  <p><em>git config --global user.name</em></p>
-  <figure>
-    <img src="./images/config-username.png" alt="configure username" width="400">
-    <figcaption>Configuring the username</figcaption>
-  </figure>
-  <p>To check the current set username run the fllowing command:</p>
-  <p><em>git config user.name</em></p>
-  <figure>
-    <img src="./images/check-configured-username.png" alt="check set username" width="400">
-    <figcaption>Checking the current set/configured username</figcaption>
-  </figure>
-  <p>After cinfiguring the username we can proceed to configure the email </p>
-  <h4>Configuring the email</h4>
-  <p>To configure the email run the following </p>
-  <p><em>git config --global user.email "johndoe123@gmail.com"</em></p>
-  <figure>
-    <img src="./images/configure-email.png" alt="configure email" width="400">
-    <figcaption>Configuring the username</figcaption>
-  </figure>
-  <p>To check the current set/configured email run the following command</p>
-  <p><em>git config user.email</em></p>
-  <figure>
-    <img src="./images/check-configured-email.png" alt="check configured email" width="400">
-    <figcaption>Checking the set/configured email</figcaption>
-  </figure>
-  <h3>Intializing a Git repository</h3>
-  <p>A Git repository is the central location for storing and managing all the files and their
-    version history for a project. It allows developers to track changes, collaborate, and manage
-    different versions of their codebase efficiently.</p>
-  <p>There are two types of Git repositories:</p>
-  <ol>
-    <li><b>Local Repository: </b>A local repository exists on your computer and allows you to track
-      changes, commit updates, and manage your project without needing an internet connection.</li>
-    <li><b>Remote Repository: </b>A remote repository is stored on a server or cloud-based platform like GitHub and is
-      designed for collaboration, enabling multiple developers to push their changes, pull updates
-      from others, and keep the project synchronized.</li>
-  </ol>
-  <p>Before initializing a Git repository we first need to check if the current working directory is a Git repository,
-    to do so, run the following command:
-  </p>
-  <p><em>git status</em></p>
-  <figure>
-    <img src="./images/git-status.png" alt="git status" width="400">
-    <figcaption>Checking if the current working directory is a git repository</figcaption>
-  </figure>
-  <p>Based on the above results, we can conclude that we are not in a git repository. We can now proceed to
-    intializing one by running the command below:
-  </p>
-  <p><em>git init</em></p>
-  <figure>
-    <img src="./images/initialize-repo.png" alt="git init command results" width="450">
-    <figcaption>Intializing a Git repository</figcaption>
-  </figure>
-  <p>The hightled messsage is what we are looking for, it basically tell us that our repository was
-    initialized successfully.</p>
-  <p>Reruning the <em>git status</em> command we get:</p>
-  <figure>
-    <img src="./images/git-status-rerun.png" alt="git status" width="400">
-    <figcaption>Checking if the current working directory is a git repository</figcaption>
-  </figure>
-  <h3>Adding files to the staging area</h3>
-  <p>Once you’ve created a Git repository, the next step is to add your files to the <b>staging
-      area</b> in preparation for committing.</p>
-  <p><b>The staging area </b>in Git is an intermediate area where changes can be formatted and
-    reviewed before committing them to the repository.
-  </p>
-  <p>To add files to the staging area run the following command: </p>
-  <p><em>git add .</em></p>
-  <figure>
-    <img src="./images/git-add.png" alt="git add . command" width="400">
-    <figcaption>Adding files to the staging area</figcaption>
-  </figure>
-  <h4>Tracked files vs Untracked files</h4>
-  <p><b>Tracked files</b> are files that have been added to the repository and are being monitored by Git.
-    This includes files that have been committed and those that have been added to the staging area but not yet
-    committed.
-  </p>
-  <p><b>Untracked files</b> are files that have been created in the working directory but have not yet been added to the
-    staging area.</p>
-  <p> you can run <em>git status</em> to check the status of the files</p>
-  <figure>
-    <img src="./images/tracked-untracked.png" alt="git status" width="450">
-    <figcaption>Checking the status if files</figcaption>
-  </figure>
-  <p>The files in green are tracked files and have aready been added to the staging area ready for committing while the
-    files in red are
-    untracked files and have not yet been added to the staging area</p>
-  <h3>Commiting changes</h3>
-  <p>After adding your changes in the staging area, the next step is to commit the changes. To make a commit we run the
-    following:</p>
-  <p><em>git commit -m "YOUR_COMMIT_MESSAGE"</em></p>
-  <p>The commit message should anser what the commit is doing eg adding a specific file, modifying the index.html,
-    fixing a bug etc</p>
-  <figure>
-    <img src="./images/make-a-commit.png" alt="git commit -m" width="550">
-    <figcaption>Making a Git commit</figcaption>
-  </figure>
-  <h4>Viewing past commits</h4>
-  <p>To view past commits we run the command:</p>
-  <p><em>git log</em></p>
-  <figure>
-    <img src="./images/git-log.png" alt="git log" width="550">
-    <figcaption>View past commits</figcaption>
-  </figure>
-  <p>My repository has 2 commits as shown above</p>
-  <p>the components of a git commit include:</p>
-  <ul>
-    <li>hash - a unique identifier for the commit</li>
-    <li>commit message - purpose for the commit</li>
-    <li>author - the person making the commit</li>
-    <li>timestamp - time and date when the commit is made</li>
-  </ul>
-  <p>Sometimes in repository can have hundrends of commits, to summarize the ouput of <em>git log</em> we add the flag
-    <em>--oneline</em></p>
-  <p><em>git log --oneline</em></p>
-  <figure>
-    <img src="./images/git-log-oneline.png" alt="git log --oneline" width="400">
-    <figcaption>Summarize the ouput of git log command</figcaption>
-  </figure>
-  <h4>Going back to a specific commit</h4>
-  <p>To go back to a specific commit we run the command:</p>
-  <p><em>git checkout COMMIT_HASH</em></p>
-  <p>In our case we can go back to the first commit when we did not have the upload.js file</p>
-  <figure>
-    <img src="./images/go-to-specific-commit.png" alt="git checkout" width="500">
-    <figcaption>Going back to a specific commit</figcaption>
-  </figure>
-  <p>The above screenshot shows that we have succesffully gone back to the first commit when we did not have the
-    upload.js file in our repository.</p>
-  <h3>Branches</h3>
-  <p> Branching means you diverge from the main line of development and continue to do work without messing with that
-    main line</p>
-  <p>Branches are essential for managing different versions of your codebase, allowing developers to work on separate
-    tasks without affecting the main project.</p>
-  <p>The best use case for branching is when you want to work on new features, bug fixes, or experiments simultaneously
-    without affecting the main codebase.</p>
-  <h4>Creating a new branch</h4>
-  <p>To create a new branch run the following command:</p>
-  <p><em>git branch BRANCH_NAME</em></p>
-  <figure>
-    <img src="./images/create-branch.png" alt="git branch BRANCH_NAME" width="400">
-    <figcaption>Creating a new branch</figcaption>
-  </figure>
-  <h4>Viewing all branches</h4>
-  <p>To view all branches in your repository, you need to run the command:</p>
-  <p><em>git branch</em></p>
-  <figure>
-    <img src="./images/view-all-branches.png" alt="git branch" width="400">
-    <figcaption>Viewing all branches in the working repository</figcaption>
-  </figure>
-  <p>the asterick (<b>*</b>) basically shows the current active branch, in simpler terms, it shows the branch you are
-    currently working in.</p>
-  <h4>Switching active branches</h4>
-  <p>Times come when you want to switch from a the main branch to a testing branch or another branch and work on a
-    feature or bug without affecting you main
-    codebase. To switch active branches we basically run:</p>
-  <p><em>git switch BRANCH_NAME</em></p>
-  <figure>
-    <img src="./images/switch-branch.png" alt="git switch BRANCH_NAME">
-    <figcaption>Switching active branches</figcaption>
-  </figure>
-  <p>After switching the active branch you can run the <em>git branch</em> command to confirm the new active branch
-    shown by the asterick <b>(*)</b></p>
-  <p>In my case I switched from the master branch to the testing branch</p>
-  <p><em><b>NOTE: </b>After working in one branch make sure you add the changes to the staging area and commit the
-      changes before switching to another branch to avoid carrying your changes with you as you switch to the other
-      branch.</em></p>
-  <h3>Merging a branch</h3>
-  <p>Merging a branch in Git involves combining changes from one branch into another.</p>
-  <p>For example in the testing branch, am testing a new feature and now the feature is fully developed and I want to
-    bring it over the the master branch where my main codebase is.</p>
-  <p>In this scenario I need to merge the branches, to do so I should run the following command: </p>
-  <p><em>git merge BRANCH_NAME</em></p>
-  <P>before running the command, since am bring changes from the testing branch into the master branch, i should first
-    switch into the master branch then run the command.</P>
-  <p><em>git merge testing</em></p>
-  <figure>
-    <img src="./images/merge.png" alt="git merge BRANCH_NAME" width="400">
-    <figcaption>Merging branches</figcaption>
-  </figure>
-  <p>The flow of command should be, in this case.</p>
-  <ul>
-    <li><b>git switch testing :</b> to switch to the testing branch.</li>
-    <li>work on the new feature, bug fixes etc. in this case create the file new-feature.js</li>
-    <li><b>git add .</b> : to add the new files and changes in to the staging area.</li>
-    <li><b>git commit -m "COMMIT_MESSAGE" :</b> to commit the changes in the stageing area.</li>
-    <li><b>git switch master :</b> switch back to the master branch.</li>
-    <li><b>git merge testing :</b> To bring changes in the testing branch over to the master branch.</li>
-  </ul>
-  <figure>
-    <img src="./images/process-of-merging.png" alt="the steps involved before merging">
-    <figcaption>Flow of commands when working with differen branches and when merging</figcaption>
-  </figure>
-  <p>The <em>ls</em> command is just there to show us the availability of the new-feature.js file, which only comes
-    available in the master branch after merging it with the testing branch.</p>
-  <h4>Deleting a branch</h4>
-  <p>After working a branch and merging it with the master branch, it becomes of no use to still have it in our
-    repository unless you want to work with it later. to delete a branch we simply run the following command</p>
-  <p><em>git branch -d BRANCH_NAME</em></p>
-  <p>In this case suppose i want to delete the testing branch, i should run <em>git branch -d testing</em>
-  </p>
-  <figure>
-    <img src="./images/delete-branch.png" alt="delete branch in git">
-    <figcaption>Deleting a branch in git</figcaption>
-  </figure>
-  <h2>Conclusion</h2>
-  <p>This blogs ends here, but i have not completely exhausted the functionality of git. Git is a powerful version
-    control system with many more features that can enhance your workflow and collaboration</p>
-  <p>To continue your learning journey, I highly recommend learning the following Git concepts</p>
-  <ol>
-    <li>Remote Concepts</li>
-    <ul>
-      <li>Adding a remote to you git repository</li>
-      <li>Renaming the remote</li>
-      <li>Deleting the remote</li>
-      <li>Pushing your local repository to a remote eg GitHub</li>
-    </ul>
-
-    <li>Git stashing</li>
-    <ul>
-      <li>Temporarily saving changes without committing them</li>
-    </ul>
-    <li>Fetching and pulling in git</li>
-    <ul>
-      <li>Understanding the differences and when to use each</li>
-    </ul>
-  </ol>
-</body>
-
+    <p>
+      To install Git we first need to download it. Visit the webpage
+      <a href="https://git-scm.com/downloads">HERE</a> to download Git and make
+      sure you download one that is compatible with your operating system.
+    </p>
+    <p>
+      After installing Git, run the command <em>git --version</em> in the command
+      line to be sure git is set up successfully in your system. If everything works 
+      as expected then we can proceed to configure Git.
+    </p>
+    <h3>Configuring GIT</h3>
+    <p>In this section we will configure the email and username .</p>
+    <h4>Configuring the username</h4>
+    <p>
+       To configure the username, run the following command:
+    </p>
+    <p><em class="command">git config --global user.name</em></p>
+    <figure>
+        <img src="./images/config-username.png" alt="configure username" width="400">
+        <figcaption>Configuring the username.</figcaption>
+    </figure>
+    <p>To check the current set username run the fllowing command:</p>
+    <p><em class="command">git config user.name</em></p>
+    <figure>
+        <img src="./images/check-configured-username.png" alt="check set username" width="400">
+        <figcaption>Checking the current set/configured username.</figcaption>
+    </figure>
+    <p>After cinfiguring the username we can proceed to configure the email.</p>
+    <h4>Configuring the email</h4>
+    <p>To configure the email run the following command:</p>
+    <p><em class="command">git config --global user.email "johndoe123@gmail.com"</em></p>
+    <figure>
+        <img src="./images/configure-email.png" alt="configure email" width="400">
+        <figcaption>Configuring the email.</figcaption>
+    </figure>
+    <p>To check the current set/configured email run the following command:</p>
+    <p><em class="command">git config user.email</em></p>
+    <figure>
+        <img src="./images/check-configured-email.png" alt="check configured email" width="400">
+        <figcaption>Checking the set/configured email.</figcaption>
+    </figure>
+    <h3>Intializing a Git repository</h3>
+    <p>A Git repository is the central location for storing and managing all the files and their 
+      version history for a project. It allows developers to track changes, collaborate, and manage
+       different versions of their codebase efficiently.</p>
+       <p>There are two types of Git repositories:</p>
+       <ol>
+        <li><b>Local Repository: </b>A local repository exists on your computer and allows you to track
+           changes, commit updates, and manage your project without needing an internet connection.</li>
+        <li><b>Remote Repository: </b>A remote repository is stored on a server or cloud-based platform like GitHub and is 
+          designed for collaboration, enabling multiple developers to push their changes, pull updates 
+          from others, and keep the project synchronized.</li>
+       </ol>
+       <p>Before initializing a Git repository we first need to check if the current working directory is a Git repository,
+        to do so, run the following command: 
+       </p>
+       <p><em class="command">git status</em></p>
+       <figure>
+        <img src="./images/git-status.png" alt="git status" width="450">
+        <figcaption>Checking if the current working directory is a Git repository.</figcaption>
+       </figure>
+       <p>Based on the above results, we can conclude that we are not in a Git repository. We can now proceed to 
+        intializing one by running the command below:
+       </p>
+       <p><em class="command">git init</em></p>
+       <figure>
+        <img src="./images/initialize-repo.png" alt="git init command results" width="500">
+        <figcaption>Intializing a Git repository.</figcaption>
+       </figure>
+       <p>The hightled messsage is what we are looking for, it basically tell us that our repository was 
+        initialized successfully.</p>
+        <p>Reruning the <em>git status</em> command we get:</p>
+        <figure>
+          <img src="./images/git-status-rerun.png" alt="git status" width="500">
+          <figcaption>Checking if the current working directory is a git repository.</figcaption>
+        </figure>
+        <h3>Adding files to the staging area</h3>
+        <p>Once you’ve created a Git repository, the next step is to add your files to the <b>staging 
+          area</b> in preparation for committing.</p>
+          <p><b>The staging area </b>in Git is an intermediate area where changes can be formatted and 
+            reviewed before committing them to the repository.
+          </p>
+          <p>To add files to the staging area run the following command: </p>
+          <p><em class="command">git add .</em></p>
+          <figure>
+            <img src="./images/git-add.png" alt="git add . command" width="400">
+            <figcaption>Adding files to the staging area.</figcaption>
+          </figure>
+          <h4>Tracked files vs Untracked files</h4>
+          <p><b>Tracked files</b> are files that have been added to the repository and are being monitored by Git. 
+            This includes files that have been committed and those that have been added to the staging area but not yet committed.
+          </p>
+          <p><b>Untracked files</b> are files that have been created in the working directory but have not yet been added to the staging area.</p>
+          <p> You can run <em>git status</em> to check the status of the files.</p>
+          <figure>
+            <img src="./images/tracked-untracked.png" alt="git status" width="500">
+            <figcaption>Checking the status if files</figcaption>
+          </figure>
+          <p>The files in green are tracked files and have aready been added to the staging area ready for committing while the files in red are 
+            untracked files and have not yet been added to the staging area.</p>
+          <h3>Commiting changes</h3>
+          <p>After adding your changes in the staging area, the next step is to commit the changes. To make a commit we run the following:</p>
+          <p><em class="command">git commit -m "YOUR_COMMIT_MESSAGE"</em></p>
+          <p>The commit message should answer what the commit is doing eg adding a specific file, modifying the index.html, fixing a bug etc.</p>
+          <figure>
+            <img src="./images/make-a-commit.png" alt="git commit -m" width="550">
+            <figcaption>Making a Git commit</figcaption>
+          </figure>
+          <h4>Viewing past commits</h4>
+          <p>To view past commits we run the command:</p>
+          <p><em class="command">git log</em></p>
+          <figure>
+            <img src="./images/git-log.png" alt="git log" width="550">
+            <figcaption>View past commits.</figcaption>
+          </figure>
+          <p>My repository has 2 commits as shown above.</p>
+          <p>The components of a git commit include:</p>
+          <ul>
+            <li>hash - a unique identifier for the commit.</li>
+            <li>commit  message - purpose for the commit.</li>
+            <li>author - the person making the commit.</li>
+            <li>timestamp - time and date when the commit is made.</li>
+          </ul>
+          <p>Sometimes in repository can have hundrends of commits, to summarize the ouput of <em>git log</em> we add the flag <em>--oneline</em>.</p>
+          <p><em class="command">git log --oneline</em></p>
+          <figure>
+            <img src="./images/git-log-oneline.png" alt="git log --oneline" width="400">
+            <figcaption>Summarize the ouput of git log command.</figcaption>
+          </figure>
+          <h4>Going back to a specific commit</h4>
+          <p>To go back to a specific commit we run the command:</p>
+          <p><em class="command">git checkout COMMIT_HASH</em></p>
+          <p>In our case we can go back to the first commit when we did not have the upload.js file.</p>
+          <figure>
+            <img src="./images/go-to-specific-commit.png" alt="git checkout" width="500">
+            <figcaption>Going back to a specific commit.</figcaption>
+          </figure>
+          <p>The above screenshot shows that we have succesffully gone back to the first commit when we did not have the upload.js file in our repository.</p>
+          <h3>Branches</h3>
+          <p> Branching means you diverge from the main line of development and continue to do work without messing with that main line</p>
+          <p>Branches are essential for managing different versions of your codebase, allowing developers to work on separate tasks without affecting the main project.</p>
+          <p>The best use case for branching is when you want to work on new features, bug fixes, or experiments simultaneously without affecting the main codebase.</p>
+          <h4>Creating a new branch</h4>
+          <p>To create a new branch run the following command:</p>
+          <p><em class="command">git branch BRANCH_NAME</em></p>
+          <figure>
+            <img src="./images/create-branch.png" alt="git branch BRANCH_NAME" width="400">
+            <figcaption>Creating a new branch.</figcaption>
+          </figure>
+          <h4>Viewing all branches</h4>
+          <p>To view all branches in your repository, you need to run the command:</p>
+          <p><em class="command">git branch</em></p>
+          <figure>
+            <img src="./images/view-all-branches.png" alt="git branch" width="400">
+            <figcaption>Viewing all branches in the working repository.</figcaption>
+          </figure>
+          <p>The asterick (<b>*</b>) basically shows the current active branch, in simpler terms, it shows the branch you are currently working in.</p>
+          <h4>Switching active branches</h4>
+          <p>Times come when you want to switch from a the main branch to a testing branch or another branch and work on a feature or bug without affecting you main 
+            codebase. To switch active branches we basically run:</p>
+            <p><em class="command">git switch BRANCH_NAME</em></p>
+            <figure>
+              <img src="./images/switch-branch.png" alt="git switch BRANCH_NAME">
+              <figcaption>Switching active branches.</figcaption>
+            </figure>
+            <p>After switching the active branch you can run the <em>git branch</em> command to confirm the new active branch shown by the asterick (<b>*</b>).</p>
+            <p>In my case I switched from the master branch to the testing branch</p>
+            <p id="note"><b>NOTE: </b>After working in one branch make sure you add the changes to the staging area and commit the changes before switching to another branch to avoid carrying your changes with you as you switch to the other branch.</p>
+          <h3>Merging a branch</h3>
+          <p>Merging a branch in Git involves combining changes from one branch into another.</p>
+          <p>For example in the testing branch, am testing a new feature and now the feature is fully developed and I want to bring it over the the master branch where my main codebase is.</p>
+          <p>In this scenario I need to merge the branches, to do so I should run the following command: </p>
+          <p><em class="command">git merge BRANCH_NAME</em></p>
+          <P>Before running the command, since am bringing changes from the testing branch into the master branch, I should first switch into the master branch then run the command below:</P>
+          <p><em class="command">git merge testing</em></p>
+          <figure>
+            <img src="./images/merge.png" alt="git merge BRANCH_NAME" width="400">
+            <figcaption>Merging branches.</figcaption>
+          </figure>
+          <p>The flow of command should be, in this case.</p>
+          <ul>
+            <li><b>git switch testing :</b> to switch to the testing branch.</li>
+            <li>work on the new feature, bug fixes etc. in this case create the file new-feature.js.</li>
+            <li><b>git add .</b> : to add the new files and changes in to the staging area.</li>
+            <li><b>git commit -m "COMMIT_MESSAGE" :</b> to commit the changes in the stageing area.</li>
+            <li><b>git switch master :</b> switch back to the master branch.</li>
+            <li><b>git merge testing :</b> To bring changes in the testing branch over to the master branch.</li>
+          </ul>
+          <figure>
+            <img src="./images/process-of-merging.png" alt="the steps involved before merging">
+            <figcaption>Flow of commands when working with different branches and when merging.</figcaption>
+          </figure>
+          <p>The <em>ls</em> command is just there to show us the availability of the new-feature.js file, which only comes available in the master branch after merging it with the testing branch.</p>
+          <h4>Deleting a branch</h4>
+          <p>After working a branch and merging it with the master branch, it becomes of no use to still have it in our repository unless you want to work with it later. to delete a branch we simply run the following command:</p>
+          <p><em class="command">git branch -d BRANCH_NAME</em></p>
+          <p>In this case suppose I want to delete the testing branch, the command I should run is:  <em>git branch -d testing</em>
+          </p>
+          <figure>
+            <img src="./images/delete-branch.png" alt="delete branch in git">
+            <figcaption>Deleting a branch in Git.</figcaption>
+          </figure>
+          <h2>Conclusion</h2>
+          <p>This blogs ends here, but I have not completely exhausted the functionality of git. Git is a powerful version control system with many more features that can enhance your workflow and collaboration</p>
+          <p>To continue your learning journey, I highly recommend learning the following Git concepts</p>
+          <ol>
+            <li>Remote Concepts</li>
+              <ul>
+                <li>Adding a remote to your Git repository.</li>
+                <li>Renaming the remote.</li>
+                <li>Deleting the remote.</li>
+                <li>Pushing your local repository to a remote eg GitHub.</li>
+              </ul>
+              
+            <li>Git stashing</li>
+              <ul>
+                <li>Temporarily saving changes without committing them.</li>
+              </ul>
+            <li>Fetching and pulling in git</li>
+              <ul>
+                <li>Understanding the differences and when to use each.</li>
+              </ul>
+          </ol>
+  </body>        
 </html>
