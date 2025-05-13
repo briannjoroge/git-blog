@@ -1,0 +1,23 @@
+.command {
+  background-color: #d4d4d4;
+  border-left: 4px solid #4caf50;
+  padding: 3px 8px;
+  margin-top: 5px;
+  color: #000;
+}
+
+#note{
+  color: #06414b;
+  background-color: #d2eff4;
+  border-left: 4px solid #12d419;
+  padding: 3px 8px;
+  font-style: italic;
+}
+
+#error{
+  color: #000000;
+  background-color: #c8ad4a;
+  border-left: 4px solid rgb(185, 7, 7);
+  padding: 3px 8px;
+  font-style: italic;
+}
