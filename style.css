@@ -100,3 +100,26 @@ p {
   text-align: justify;
 }
 
+figure {
+  margin: 20px 0;
+  text-align: center;
+}
+
+figcaption {
+  margin-top: 5px;
+  font-style: italic;
+  color: #9b9b9b;
+}
+
+img {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-width: 100%;
+  height: auto;
+}
+
+em {
+  font-family: "Courier New", Courier, monospace;
+  color: #d63384;
+}
+
