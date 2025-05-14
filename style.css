@@ -19,6 +19,7 @@ h1 {
   text-align: center;
   font-size: 45px;
   border-bottom: 3px solid #4caf50;
+  
 }
 
 .command {
@@ -121,5 +122,26 @@ img {
 em {
   font-family: "Courier New", Courier, monospace;
   color: #d63384;
+}
+
+
+
+.img-for-background
+
+{
+  background-image: url(./images/backgroundimage1.jpg);
+  height: 100px;
+  opacity: 1;
+  background-attachment: fixed ;
+  background-position: center;
+  background-size: cover;
+
+  /*used multiply to create imagage transparency*/
+
+  
+  background-blend-mode: multiply;  
+
+
+
 }
 
