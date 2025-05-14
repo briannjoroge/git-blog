@@ -8,10 +8,12 @@
   <title>Everyday Git</title>
 </head>
 
-<body>
-  <div>
+<body class = img-for-background>
+ 
+  <div class = img-for-background>
     <h1>EVERYDAY GIT</h1>
     <p>
+      
       In the world of software development, change is constant. Code evolves
       rapidly, features are added, bugs are fixed, and improvements are made. To
       keep track of these changes and to collaborate effectively, developers
@@ -161,6 +163,8 @@
         <img src="./images/git-status-rerun.png" alt="git status" width="500">
         <figcaption>Checking if the current working directory is a git repository.</figcaption>
       </figure>
+      
+      
       <h3>Adding files to the staging area</h3>
       <p>Once you’ve created a Git repository, the next step is to add your files to the <b>staging
           area</b> in preparation for committing.</p>
@@ -220,6 +224,8 @@
         <img src="./images/git-log-oneline.png" alt="git log --oneline" width="400">
         <figcaption>Summarize the ouput of git log command.</figcaption>
       </figure>
+
+
       <h4>Going back to a specific commit</h4>
       <p>To go back to a specific commit we run the command:</p>
       <p><em class="command">git checkout COMMIT_HASH</em></p>
@@ -230,6 +236,8 @@
       </figure>
       <p>The above screenshot shows that we have succesffully gone back to the first commit when we did not have the
         upload.js file in our repository.</p>
+
+
       <h3>Branches</h3>
       <p> Branching means you diverge from the main line of development and continue to do work without messing with
         that main line</p>
@@ -296,7 +304,7 @@
       </figure>
       <p>The <em>ls</em> command is just there to show us the availability of the new-feature.js file, which only comes
         available in the master branch after merging it with the testing branch.</p>
-      <h4>Deleting a branch</h4>
+      <h4 >Deleting a branch</h4>
       <p>After working a branch and merging it with the master branch, it becomes of no use to still have it in our
         repository unless you want to work with it later. to delete a branch we simply run the following command:</p>
       <p><em class="command">git branch -d BRANCH_NAME</em></p>
@@ -307,7 +315,7 @@
         <img src="./images/delete-branch.png" alt="delete branch in git">
         <figcaption>Deleting a branch in Git.</figcaption>
       </figure>
-      <h2>Conclusion</h2>
+      <h2 >Conclusion</h2>
       <p>This blogs ends here, but I have not completely exhausted the functionality of git. Git is a powerful version
         control system with many more features that can enhance your workflow and collaboration</p>
       <p>To continue your learning journey, I highly recommend learning the following Git concepts</p>
@@ -326,12 +334,12 @@
         </ul>
         <li class="conclusion">Fetching and pulling in git</li>
         <ul>
-          <li>Understanding the differences and when to use each.</li>
+          <li >Understanding the differences and when to use each.</li>
         </ul>
       </ol>
     </div>
   </div>
-
+ 
 </body>
 
 </html>
