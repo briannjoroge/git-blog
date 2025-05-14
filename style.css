@@ -130,7 +130,7 @@ em {
 
 {
   background-image: url(./images/backgroundimage1.jpg);
-  height: 95px;
+  height: 150px;
   opacity: 1;
   background-attachment: fixed ;
   background-position: center;
@@ -138,10 +138,21 @@ em {
 
   /*used multiply to create imagage transparency*/
 
-  
   background-blend-mode: multiply;  
 
 
 
 }
 
+p {
+  font-family: Verdana;
+  font-size: 15px;
+  color: #eb9b9b;
+  margin: 20px;
+  text-align: left;
+  background-color: #0b0606;
+  padding: 10px 15px;
+  border-left: 4px solid #1518ca;
+  border-radius: 4px;
+  border-style: inset;
+}
